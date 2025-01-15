@@ -90,12 +90,12 @@ function display_weather_widget() {
         $wind_speed = $forecast['wind_spd'];
         $humidity = $forecast['rh'];
 
-        echo "<div class='weather-widget'>";
+        echo "<div class='weather-widget' style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>";
         echo "<h3>Weather Forecast</h3>";
         echo "<p><strong>Description:</strong> $description</p>";
         echo "<p><strong>Temperature:</strong> {$temp}°C</p>";
-        echo "<p><strong>Wind Speed:</strong> {$wind_speed} m/s</p>";
         echo "<p><strong>Humidity:</strong> {$humidity}%</p>";
+        echo "<p><strong>Wind Speed:</strong> {$wind_speed} m/s</p>";
         echo "</div>";
     } else {
         echo "<p>Unable to fetch weather data.</p>";
